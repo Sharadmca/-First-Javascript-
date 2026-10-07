@@ -7,4 +7,5 @@ console.log("Name: " + name);
 console.log("Age: " + age);
 console.log("Roll Number: " + rollno);
 console.log("Course: " + Course);
+alert("Name: " + name + "\nAge: " + age + "\nRoll Number: " + rollno + "\nCourse: " + Course);
         
