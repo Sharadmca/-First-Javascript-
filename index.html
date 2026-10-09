@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Event Listener</title>
+</head>
+<body>
+
+    <label>Enter Your Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Updated Name:</label>
+    <input type="text" id="updatedName">
+
+    <br><br>
+
+    <button id="btn">Show Result</button>
+
+    <p id="result"></p>
+
+    <script>
+        let nameInput = document.getElementById("name");
+        let updatedInput = document.getElementById("updatedName");
+        let result = document.getElementById("result");
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", function() {
+
+            let value = nameInput.value;
+
+            
+            result.innerHTML = "Your Name is: " + value;
+
+            
+            alert("Your Name is: " + value);
+
+            updatedInput.value = value;
+
+        });
+    </script>
+
+</body>
+</html>

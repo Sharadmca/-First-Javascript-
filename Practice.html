@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showdata(){
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let password = document.getElementById("password").value;
+            document.getElementById('name').value = "Sharad Tyagi";
+
+            // document.getElementById("result").innerHTML = "Name: " + name + "<br>Age: " + age + "<br>Password: " + password;
+            
+            alert(name);
+        }
+        
+    </script>
+</head>
+<body>
+    Enter your name: <input type="text" id="name"><br><br>
+    Enter your age: <input type="number" id="age"><br><br>
+    Enter your password: <input type="password" id="password"><br><br>
+    <button onclick="showdata()">Submit</button>
+    
+</body>
+</html>
