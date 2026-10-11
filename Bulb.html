@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bulb Toggle</title>
 </head>
 <body>
-    <button type="button" onclick="changeimg()">Switch on</button>
-    <button type="button" onclick="changeimg1()">Switch off</button>
-    <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Gluehlampe_01_KMJ.jpg?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bulb" width="300" height="300">
-    
-<script src="script.js"></script>
+
+
+    <img id="bulb"
+         src="https://www.w3schools.com/js/pic_bulboff.gif"
+         width="150">
+
+    <br><br>
+
+    <button id="toggleBtn">Turn ON</button>
+
+    <script>
+
+        let isOn = false;
+
+        document.getElementById("toggleBtn")
+        .addEventListener("click", function() {
+
+            let bulb = document.getElementById("bulb");
+            let btn = document.getElementById("toggleBtn");
+
+            if (isOn == false) {
+                bulb.src ="https://www.w3schools.com/js/pic_bulbon.gif";
+                btn.innerHTML = "Turn OFF";
+                isOn = true;
+            }
+            else {
+                bulb.src ="https://www.w3schools.com/js/pic_bulboff.gif";
+                btn.innerHTML = "Turn ON";
+                isOn = false;
+            }
+
+        });
+
+    </script>
+
 </body>
 </html>

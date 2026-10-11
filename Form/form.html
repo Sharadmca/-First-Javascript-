@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Controls</title>
+</head>
+<body>
+
+<h2>Student Information Form</h2>
+
+<form id="studentForm">
+
+    <!-- 1. Text -->
+    <label>Student Name:</label>
+    <input type="text" id="studentName" required>
+    <br><br>
+
+    <!-- 2. Email -->
+    <label>Email:</label>
+    <input type="email" id="email">
+    <br><br>
+
+    <!-- 3. Password -->
+    <label>Password:</label>
+    <input type="password" id="password">
+    <br><br>
+
+    <!-- 4. Number -->
+    <label>Age:</label>
+    <input type="number" id="age" min="1" max="100">
+    <br><br>
+
+    <!-- 5. Telephone -->
+    <label>Mobile:</label>
+    <input type="tel" id="mobile">
+    <br><br>
+
+    <!-- 6. Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <!-- 7. Checkboxes -->
+    <label>Skills:</label>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    <br><br>
+
+    <!-- 8. Single Select Dropdown -->
+    <label>Course:</label>
+    <select id="course">
+        <option value="">Select Course</option>
+        <option value="MCA">MCA</option>
+        <option value="BCA">BCA</option>
+        <option value="BTech">B.Tech</option>
+    </select>
+    <br><br>
+
+    <!-- 9. Multiple Select -->
+    <label>Preferred Languages:</label>
+    <select id="languages" multiple>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSharp">C#</option>
+    </select>
+    <br><br>
+
+    <!-- 10. Textarea -->
+    <label>Address:</label>
+    <textarea id="address" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <!-- 11. Date -->
+    <label>Date of Birth:</label>
+    <input type="date" id="dob">
+    <br><br>
+
+    <!-- 12. Time -->
+    <label>Preferred Time:</label>
+    <input type="time" id="preferredTime">
+    <br><br>
+
+    <!-- 13. Checkbox for Agreement -->
+    <label>
+        <input type="checkbox" id="agreement" value="Accepted">
+        I accept the terms and conditions
+    </label>
+    <br><br>
+
+    <!-- 14. Range -->
+    <label>Programming Skill Level (1-10):</label>
+    <input type="range" id="skillLevel" min="1" max="10" value="5">
+    <br><br>
+
+    <!-- 15. Color -->
+    <label>Favorite Color:</label>
+    <input type="color" id="favoriteColor" value="#0000ff">
+    <br><br>
+
+    <!-- 16. File -->
+    <label>Upload Resume:</label>
+    <input type="file" id="resume">
+    <br><br>
+
+    <!-- 17. URL -->
+    <label>Portfolio URL:</label>
+    <input type="url" id="portfolio">
+    <br><br>
+
+    <!-- 18. Hidden -->
+    <input type="hidden" id="formType" value="StudentRegistration">
+
+    <!-- 19. Search -->
+    <label>Search Topic:</label>
+    <input type="search" id="searchTopic">
+    <br><br>
+
+    <!-- 20. Buttons -->
+    <button type="submit">Read Form Values</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<h3>Output</h3>
+<pre id="output"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
