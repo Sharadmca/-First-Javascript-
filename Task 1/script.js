@@ -9,3 +9,8 @@ console.log("Roll Number: " + rollno);
 console.log("Course: " + Course);
 alert("Name: " + name + "\nAge: " + age + "\nRoll Number: " + rollno + "\nCourse: " + Course);
         
+
+
+let name=prompt("Enter your name");
+
+alert("Hello" +name);

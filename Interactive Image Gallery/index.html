@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Interactive Image Gallery</h1>
+
+        <div class="main-image-container">
+            <img id="main-image" src="" alt="Selected gallery image">
+        </div>
+
+        <p id="image-caption" aria-live="polite"></p>
+
+        <div class="navigation">
+            <button id="prev-btn" type="button">Previous</button>
+            <span id="image-counter"></span>
+            <button id="next-btn" type="button">Next</button>
+        </div>
+
+        <div id="thumbnail-container" class="thumbnails"></div>
+    </div>
+
+</body>
+</html>

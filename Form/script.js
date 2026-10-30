@@ -88,5 +88,6 @@ form.addEventListener("reset", function() {
     document.getElementById("result").innerHTML = "";
 
     alert("Form has been reset!");
+    
 
 });
